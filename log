@@ -145,3 +145,20 @@ exercises.c:83:11: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 93d2dfc
+Thu 16 Mar 2023 04:22:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:14: error: invalid initializer
+   85 |   Vector V = (int*) malloc(sizeof(int));
+      |              ^
+exercises.c:85:10: error: unused variable ‘V’ [-Werror=unused-variable]
+   85 |   Vector V = (int*) malloc(sizeof(int));
+      |          ^
+exercises.c:83:11: error: unused variable ‘v’ [-Werror=unused-variable]
+   83 |   Vector *v = NULL;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+799ab6b
