@@ -80,9 +80,9 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  vector *v == NULL;
+  Vector *v == NULL;
 
-  vector *V == (*int) calloc(n, sizeof(int));
+  Vector *V == (*int) calloc(n, sizeof(int));
   
    return NULL;
 }
