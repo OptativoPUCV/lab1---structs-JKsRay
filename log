@@ -55,3 +55,24 @@ Thu 16 Mar 2023 04:14:25 PM UTC:
  tests:  3|4
 total_score: 30/70
 a313a8c
+Thu 16 Mar 2023 04:20:40 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   83 |   vector *v == NULL;
+      |   ^~~~~~
+      |   Vector
+exercises.c:83:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘==’ token
+   83 |   vector *v == NULL;
+      |             ^~
+exercises.c:85:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   85 |   vector *V == (*int) calloc(n, sizeof(int));
+      |   ^~~~~~
+      |   Vector
+exercises.c:85:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘==’ token
+   85 |   vector *V == (*int) calloc(n, sizeof(int));
+      |             ^~
+Compilation failed
+f71da3d
