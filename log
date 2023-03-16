@@ -91,3 +91,23 @@ exercises.c:85:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__
 exercises.c:85:13: error: expected expression before ‘==’ token
 Compilation failed
 928c16b
+Thu 16 Mar 2023 04:21:01 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:17: error: expected expression before ‘int’
+   85 |   Vector *V = (*int) calloc(n, sizeof(int));
+      |                 ^~~
+exercises.c:85:22: error: expected ‘,’ or ‘;’ before ‘calloc’
+   85 |   Vector *V = (*int) calloc(n, sizeof(int));
+      |                      ^~~~~~
+exercises.c:85:11: error: unused variable ‘V’ [-Werror=unused-variable]
+   85 |   Vector *V = (*int) calloc(n, sizeof(int));
+      |           ^
+exercises.c:83:11: error: unused variable ‘v’ [-Werror=unused-variable]
+   83 |   Vector *v = NULL;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+83655ea
