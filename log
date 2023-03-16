@@ -202,3 +202,9 @@ exercises.c:85:11: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 125b9cd
+Thu 16 Mar 2023 04:24:50 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+ tests:  3|4
+total_score: 30/70
+c954e3c
