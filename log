@@ -182,3 +182,23 @@ exercises.c:85:10: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9a4ceae
+Thu 16 Mar 2023 04:22:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:11: error: redefinition of ‘v’
+   85 |   Vector *v = (int*) malloc(sizeof(int));
+      |           ^
+exercises.c:83:11: note: previous definition of ‘v’ with type ‘Vector *’
+   83 |   Vector *v = NULL;
+      |           ^
+exercises.c:85:15: error: initialization of ‘Vector *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   85 |   Vector *v = (int*) malloc(sizeof(int));
+      |               ^
+exercises.c:85:11: error: unused variable ‘v’ [-Werror=unused-variable]
+   85 |   Vector *v = (int*) malloc(sizeof(int));
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+125b9cd
