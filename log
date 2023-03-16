@@ -16,3 +16,36 @@ Thu 16 Mar 2023 04:09:05 PM UTC:
  tests:  2|5
 total_score: 20/70
 46e68fa
+Thu 16 Mar 2023 04:13:57 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:65:11: error: passing argument 1 of ‘strcpy’ makes pointer from integer without a cast [-Werror=int-conversion]
+   65 |   strcpy(p->edad, edad);
+      |          ~^~~~~~
+      |           |
+      |           int
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: expected ‘char * restrict’ but argument is of type ‘int’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:65:19: error: passing argument 2 of ‘strcpy’ makes pointer from integer without a cast [-Werror=int-conversion]
+   65 |   strcpy(p->edad, edad);
+      |                   ^~~~
+      |                   |
+      |                   int
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: expected ‘const char * restrict’ but argument is of type ‘int’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+badd7e4
