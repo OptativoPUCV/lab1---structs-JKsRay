@@ -106,6 +106,7 @@ la cual retorna el valor en la posición i del vector v.
 int obtenerValor(Vector * v, int i) {
   int valor = 0;
 
+  
   valor = v->datos[i];
   
    return valor;
@@ -140,9 +141,5 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   suma2 = a2 + b2;
 
   c->datos[0] = suma1;
-  c->datos[1] = suma2;
-
-  
-  //for(int k = 0 ; k < c->capacidad ; k++)
-  
+  c->datos[1] = suma2;  
 }
